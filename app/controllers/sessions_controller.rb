@@ -9,6 +9,7 @@ class SessionsController < ApplicationController
         password: '123'
         password_confirmation: '123'
       )
+      end
   end
 
   def create
