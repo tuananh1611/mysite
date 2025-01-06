@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     unless User.exists?(email_address: 'admin@example.com')
       User.create!(
         email_address: 'admin@example.com',
-        password: '123'
+        password: '123',
         password_confirmation: '123'
       )
       end
