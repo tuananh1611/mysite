@@ -1,4 +1,3 @@
-
 <%= form_with model: product do |form| %>
   <div>
     <%= form.label :name %>
@@ -15,7 +14,11 @@
     <%= form.file_field :featured_image, accept: "image/*" %>
   </div>
 
-  
+  <div>
+    <%= form.label :inventory_count, style: "display: block" %>
+    <%= form.number_field :inventory_count %>
+  </div>
+
   <div>
     <%= form.submit %>
   </div>

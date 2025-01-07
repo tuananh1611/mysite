@@ -7,9 +7,9 @@ class SessionsController < ApplicationController
       User.create!(
         email_address: 'admin@example.com',
         password: '123',
-        password_confirmation: '123'
+        password_confirmation: '123',
       )
-      end
+    end
   end
 
   def create

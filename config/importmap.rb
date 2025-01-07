@@ -2,3 +2,5 @@
 
 pin "trix"
 pin "@rails/actiontext", to: "actiontext.js"
+pin "trix"
+pin "@rails/actiontext", to: "actiontext.esm.js"
