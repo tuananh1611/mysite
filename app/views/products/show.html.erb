@@ -1,7 +1,9 @@
 <p><%= link_to "Back", products_path %></p>
 
 <section class="product">
-  <%= image_tag @product.featured_image if @product.featured_image.attached? %>
+  <% if @product.featured_image.attached? %>
+      <img src="<%= url_for(@product.featured_image) %>" alt="Featured Image" width="200px">
+  <% end %>
 
   <section class="product-info">
     <% cache @product do %>
